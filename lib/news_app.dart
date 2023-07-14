@@ -15,7 +15,7 @@ class _NewsAppState extends State<NewsApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: Application.debug,
-      locale: const Locale('es'),
+      locale: const Locale('en'),
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,

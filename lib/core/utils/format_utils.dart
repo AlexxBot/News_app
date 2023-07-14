@@ -3,11 +3,13 @@ import 'package:intl/intl.dart';
 
 class FormatUtils {
   static String dateFormat(DateTime? date) {
-    return date == null ? "" : DateFormat('dd MMMM, yyyy', 'es').format(date);
+    return date == null
+        ? ""
+        : DateFormat('dd MMMM, yyyy' /* , 'es' */).format(date);
   }
 
   static String timeFormat(DateTime? time) {
-    return time == null ? "" : DateFormat('HH:mm:ss', 'es').format(time);
+    return time == null ? "" : DateFormat('HH:mm:ss' /* , 'es' */).format(time);
   }
 
   /* static String dateTimeFormat(DateTime? date) {
